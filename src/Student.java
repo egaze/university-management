@@ -12,7 +12,7 @@ public class Student {
 
     public Student() {
         this.name = "N/A";
-        this.ID = 000000000;
+        this.ID = 0000000000;
         this.major = "N/A";
         this.GPA = 0.0;
     }

@@ -4,7 +4,7 @@ public class Lecturer {
     private String name;
     private ArrayList<Course> lectureCourses;
 
-    public Lecturer(String name, ArrayList<Course> lectureCourses) {
+    public Lecturer(String name) {
         this.name = name;
         this.lectureCourses = new ArrayList<>();
     }
@@ -15,5 +15,13 @@ public class Lecturer {
 
     public ArrayList<Course> getLectureCourses() {
         return lectureCourses;
+    }
+
+    public void addCourse(Course course) {
+        this.lectureCourses.add(course);
+    }
+
+    public void removeCourse(Course course) {
+        this.lectureCourses.remove(course);
     }
 }
